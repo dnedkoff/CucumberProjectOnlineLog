@@ -28,15 +28,15 @@ public class AddStudentSteps {
 	    form.addfirstName("Ivan");
 	}
 	
-	@When("^натиска бутона въведи$")
-	public void clikStudentFormStudentButton() throws Throwable {
-		form.clickStudentButton();
-	}
-
 
 	@When("^въвежда данните на ученика без фамилия$")
 	public void addlastName() throws Throwable {
 	    form.addlastName("");
+	}
+	
+	@When("^натиска бутона въведи$")
+	public void clikStudentFormStudentButton() throws Throwable {
+		form.clickStudentButton();
 	}
 	
 	@Then("^вижда информация \"([^\"]*)\"$")

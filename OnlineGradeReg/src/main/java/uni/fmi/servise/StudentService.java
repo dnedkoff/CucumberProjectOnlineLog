@@ -23,7 +23,7 @@ public class StudentService {
 				.anyMatch(student -> student.getfirstName().equals(firstName)
 						&& student.getlastName().equals(lastName));
 
-		return studentExists ? "Данните са правилно!" : "Данните са непълни!";
+		return studentExists ? "Студента вече съществува!" : "Успешно въведен студент!";
 	}
 
 	
